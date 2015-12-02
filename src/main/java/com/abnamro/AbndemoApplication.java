@@ -11,8 +11,11 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @SpringBootApplication
 @EnableGlobalMethodSecurity(securedEnabled=true)
+@EnableSwagger2
 public class AbndemoApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
